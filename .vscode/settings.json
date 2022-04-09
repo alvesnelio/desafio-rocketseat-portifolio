@@ -1,10 +1,5 @@
 {
     "conventionalCommits.scopes": [
-        "Personas",
-        "DataFixtures",
-        "PHPUnit Testes Automatizados",
-        "SGED",
-        "MIDIA",
         "Desafio RocketSeat"
     ]
 }
