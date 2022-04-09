@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "Merriweather Sans Light";
+    src: url("../fonts/MerriweatherSans-Light.ttf");
+}
+@font-face {
+    font-family: "Merriweather Sans Regular";
+    src: url("../fonts/MerriweatherSans-Regular.ttf");
+}
+@font-face {
+    font-family: "Merriweather Sans Medium";
+    src: url("../fonts/MerriweatherSans-Medium.ttf");
+}
+@font-face {
+    font-family: "Merriweather Sans Bold";
+    src: url("../fonts/MerriweatherSans-Bold.ttf");
+}
+@font-face {
+    font-family: "Merriweather Sans Extra Bold";
+    src: url("../fonts/MerriweatherSans-ExtraBold.ttf");
+}
+
+:root {
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--body-bg-color);
+    padding: 30px;
+}
+
+.content-header {
+    width: 100%;
+    float: left;
+    max-width: 350px;
+}
+
+.col{
+    width: 100%;
+    float: left;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 60%);
+}
+
+.col .vinheta{
+    margin: 0px;
+    padding: 0px 0px 25px 0px;
+    font-size: 20px;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Bold';
+}
+
+.perfil .img{
+    width: 100%;
+    float: left;
+    max-height: 130px;
+    padding-bottom: 30px;
+}
+
+.perfil .img img{
+    margin: auto;
+    display: block;
+    max-height: 128px;
+    border-radius: 50%;
+    border: solid 2px #00FF00;
+}
+
+.perfil .perfil-nome{
+    width: 100%;
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Merriweather Sans Regular';
+
+    padding-bottom: 15px;
+    color: var(--text-color);
+}
+
+.perfil .perfil-funcao{
+    font-size: 15px;
+    text-align: center;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Light';
+}
+
+/** Funções **/
+.informacoes ul{
+    margin: 0px;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+.informacoes ul li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.informacoes ul li:last-of-type{
+    margin-bottom: 0px;
+}
+
+.informacoes ul li a{
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Regular';
+}
+
+.informacoes ul li a .icone{
+    fill: var(--text-color);
+}
+
+.informacoes ul li a span{
+    margin-left: 20px;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.habilidades .col-conteudo{
+    width: 100%;
+    float: left;
+}
+
+.habilidades .col-skills .skills{
+    min-width: 86px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    padding: 5px 10px 5px 5px;
+
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--bg-techs);
+    font-family: 'Merriweather Sans Bold';
+}
+
+.habilidades .col-skills .skills:nth-child(n+7){
+    margin-bottom: 0px;
+}
+
+.habilidades .col-skills .skills:only-of-type(1){
+    margin-bottom: 0px;
+}
+
+.experiencias .experiencia,
+.cursos .curso{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.experiencias .experiencia:nth-of-type(4),
+.cursos .curso:nth-of-type(4){
+    margin-bottom: 0px;
+}
+
+.experiencias .experiencia .empresa,
+.cursos .curso .empresa{
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Regular';
+}
+
+.experiencias .experiencia .empresa::before,
+.cursos .curso .empresa::before{
+    content: '•';
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.experiencias .experiencia .periodo,
+.cursos .curso .periodo{
+    font-size: 12px;
+    padding-left: 20px;
+    font-weight: lighter;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Regular';
+}
+
+.experiencias .experiencia .cargo,
+.cursos .curso .titulo{
+    font-size: 12px;
+    padding-left: 20px;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Regular';
+}
