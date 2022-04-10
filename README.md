@@ -12,4 +12,9 @@
 #### Desafio
 
 - Inicializado
-  - 2022-05-09 até 2022-00-00
+  - 2022-04-09 até 2022-04-10
+
+#### Tecnologias
+
+- HTML
+- CSS
