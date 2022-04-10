@@ -45,9 +45,10 @@ body{
 .col{
     width: 100%;
     float: left;
-    padding: 30px;
+    padding: 30px 15px;
     border-radius: 20px;
     margin-bottom: 30px;
+    box-sizing: border-box;
     background-color: var(--bg-cards);
     box-shadow: 2px 2px 4px 0px rgb(0 0 0 / 60%);
 }
@@ -58,6 +59,16 @@ body{
     font-size: 20px;
     color: var(--text-color);
     font-family: 'Merriweather Sans Bold';
+}
+
+.col .vinheta .link{
+    font-size: 14px;
+    font-family: 'Merriweather Sans Light';
+
+    margin-top: 5px;
+    float: right;
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .perfil .img{
@@ -141,10 +152,10 @@ body{
 
 .habilidades .col-skills .skills{
     min-width: 86px;
-    display: inline-block;
+    margin-left: 2px;
     border-radius: 20px;
     margin-bottom: 15px;
-    margin-left: 12px;
+    display: inline-block;
     padding: 5px 10px 5px 5px;
 
     font-size: 10px;
@@ -203,4 +214,73 @@ body{
     padding-left: 20px;
     color: var(--text-color);
     font-family: 'Merriweather Sans Regular';
+}
+
+/* ### Main ### */
+.content-main{
+    width: 100%;
+    float: left;
+    max-width: 950px;
+    margin-left: 60px;
+}
+
+.row{
+    width: 100%;
+    float: left;
+}
+
+.my-projects .vinheta{
+    padding-bottom: 0px;
+}
+
+/** Posts **/
+.posts .vinheta{
+    padding-bottom: 0px;
+}
+
+.post{
+    padding-left: 35px;
+}
+
+.post .post-img{
+    float: left;
+    max-width: 128px;
+    margin-right: 15px;
+}
+
+.post .post-img img{
+    border-radius: 100%;
+}
+
+.post .post-data{
+    float: left;
+    max-width: 750px;
+}
+
+.post .post-data .post-titulo{
+    font-family: 'Merriweather Sans Bold';
+    font-size: 18px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+.post .post-data .post-periodo{
+    font-family: 'Merriweather Sans Regular';
+    font-size: 14px;
+    color: var(--text-color);
+    padding-bottom: 30px;
+}
+
+.post .post-data .post-subtitulo{
+    font-family: 'Merriweather Sans Regular';
+    font-size: 16px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+.post .post-data .post-tags .post-tag{
+    font-family: 'Merriweather Sans Regular';
+    font-size: 14px;
+    color: var(--text-color);
+    margin-right: 20px;
 }
