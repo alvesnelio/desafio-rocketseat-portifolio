@@ -229,8 +229,63 @@ body{
     float: left;
 }
 
+/** Projects **/
+
 .my-projects .vinheta{
     padding-bottom: 0px;
+}
+
+.list-projects .project{
+    max-width: 460px;
+}
+
+.list-projects .project .project-titulo{
+    font-size: 16px;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Bold';
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.list-projects .project .project-titulo .icon{
+    margin-right: 15px;
+}
+
+.list-projects .project .project-texto{
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Regular';
+}
+
+.list-projects .project .project-links .link{
+    font-size: 12px;
+    margin-right: 15px;
+    color: var(--text-color);
+    font-family: 'Merriweather Sans Regular';
+    text-decoration: none;
+    display: inline-block;
+}
+
+.list-projects .project .project-links .link-language{
+    float: right;
+}
+
+.icone-javascript{
+    width: 13px;
+    height: 13px;
+    background-color: #E7DE79;
+
+    float: left;
+    margin-right: 5px;
+    border-radius: 100%;
+    border: solid 2px var(--text-color);
+}
+
+.right{
+    float: right;
 }
 
 /** Posts **/
